@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>CV</title>
+
+
+
+    <!--    Bootstrap css    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    -->
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    
+    <!--    css    
+    -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row bg-dark text-white">
+
+
+            <!--    box-1    -->
+            <div class="bg-secondary col-12 col-lg-5">
+
+                
+                <!--    Picture    -->
+                <section class="row mt-4 justify-content-center overflow-hidden">
+                    <div class="col-8 col-sm-5 col-md-4 col-lg-6 col-xl-5">
+                        <img class="rounded-circle  border border-dark"
+                            src="data:image/png;base64,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"
+                            alt="mi foto">
+                    </div>
+                </section>
+
+                <div class="row text-center justify-content-center mt-4">
+                    <h1 class="col-12">Guido do Rego</h1>
+
+                    <h2 class="mt-2 col-12">Programador</h2>
+                    <p class="col-10 bg-dark border border-dark col-8 p-3 mt-2 over">
+                        Empecé a programar en Python en 2019
+                        utilizando Tkinter, posteriormente aprendí
+                        de django y profundice mas en el sector
+                        web con JS, CSS y
+                        DRF(DjangoRestFramework)
+                    </p>
+                </div>
+
+
+                <!--    Contact    -->
+                <div class="row mt-4 justify-content-center text-center">
+                    <section class="col-10">
+                        <h4 class="col-12">Contacto:</h4>
+                        
+                        <a href="https://guidodorego.com/contact/" class="col-12 btn btn-dark mt-3"
+                         target="_blank"
+                            rel="noopener noreferrer">guidodorego.com/contact/</a>
+
+                        <a href="https://www.linkedin.com/in/guido-do-rego" class="col-12 btn btn-dark mt-3"
+                            target="_blank"
+                            rel="noopener noreferrer">www.linkedin.com/in/guido-do-rego/</a>
+
+                        <a href="https://www.github.com/GuidoGdR/" class="col-12 btn btn-dark mt-3"
+                         target="_blank"
+                            rel="noopener noreferrer">www.github.com/GuidoGdR/</a>
+                    </section>
+                </div>
+
+
+                <!--    Idiomas    -->
+                <div class="row my-5 justify-content-center">
+                    <a
+                    class="col-10 bg-danger border-0 border-animated-1 rounded"
+                    data-toggle="collapse"
+                    href="#languages"
+                    role="button">
+                        <h4 class="col-12 py-2 text-center text-white inner-text">Idiomas:</h4>
+                    </a>
+                </div>
+
+                <div id="languages" class="col-12 my-3 collapse">
+
+                    <section class="row justify-content-around">
+                        <div class="bg-dark col-5 rounded text-center mt-3">
+                            <p class="mt-3">Español</p>
+                            <hr class="bg-secondary">
+                            <p>Nativo</p>
+                        </div>
+
+                        <div class="bg-dark col-5 rounded text-center mt-3">
+                            <p class="mt-3">Ingles</p>
+                            <hr class="bg-secondary">
+                            <p>Intermedio</p>
+                        </div>
+                    </section>
+                </div>
+
+
+                <hr class="mt-4 bg-dark">
+
+
+                <!--    Herramientas    -->
+                <div class="row my-5 justify-content-center">
+                    <a
+                    class="col-10 bg-danger border-0 border-animated-1 rounded"
+                    data-toggle="collapse"
+                    href="#tools"
+                    role="button">
+                        <h4 class="col-12 py-2 text-center text-white inner-text line-">Herramientas:</h4>
+                    </a>
+                </div>
+
+                <div id="tools" class="col-12 my-3 collapse">
+
+                    <section class="row justify-content-around">
+
+                        <div class="bg-dark col-5 rounded text-center mt-3">
+                            <p class="mt-3">Python</p>
+                            <hr class="bg-secondary">
+                            <p>Avanzado</p>
+                        </div>
+
+                        <div class="bg-dark col-5 rounded text-center mt-3">
+                            <p class="mt-3">JavaScript</p>
+                            <hr class="bg-secondary">
+                            <p>Intermedio</p>
+                        </div>
+
+                        <div class="bg-dark col-5 rounded text-center mt-3">
+                            <p class="mt-3">Bash</p>
+                            <hr class="bg-secondary">
+                            <p>Básico</p>
+                        </div>
+
+                        <div class="bg-dark col-5 rounded text-center mt-3">
+                            <p class="mt-3">HTML</p>
+                            <hr class="bg-secondary">
+                            <p>Intermedio</p>
+                        </div>
+
+                        <div class="bg-dark col-5 rounded text-center mt-3">
+                            <p class="mt-3">CSS</p>
+                            <hr class="bg-secondary">
+                            <p>Avanzado</p>
+                        </div>
+
+                        <div class="bg-dark col-5 rounded text-center mt-3">
+                            <p class="mt-3">SQL</p>
+                            <hr class="bg-secondary">
+                            <p>Intermedio</p>
+                        </div>
+
+                        <div class="bg-dark col-5 rounded text-center mt-3">
+                            <p class="mt-3">Docker</p>
+                            <hr class="bg-secondary">
+                            <p>Intermedio</p>
+                        </div>
+
+                        <div class="bg-dark col-5 rounded text-center mt-3">
+                            <p class="mt-3">Git</p>
+                            <hr class="bg-secondary">
+                            <p>Intermedio</p>
+                        </div>
+
+                        <div class="bg-dark col-5 rounded text-center mt-3">
+                            <p class="mt-3">Firebase</p>
+                            <hr class="bg-secondary">
+                            <p>Básico</p>
+                        </div>
+
+                        <div class="bg-dark col-5 rounded text-center mt-3">
+                            <p class="mt-3">AWS</p>
+                            <hr class="bg-secondary">
+                            <p>Básico</p>
+                        </div>
+
+                    </section>
+                </div>
+
+
+            </div>
+
+            <!--    box-2    -->
+            <div class="col-12 col-lg-7 mt-5">
+
+
+                <!--    projects    -->
+                <div class="row my-5 justify-content-center">
+                    <a
+                    class="col-10 bg-danger border-0 border-animated-1-secondary rounded"
+                    data-toggle="collapse"
+                    href="#projects"
+                    role="button">
+                        <h4 class="col-12 py-2 text-center text-white inner-text">Proyectos:</h4>
+                    </a>
+                </div>
+
+                <div id="projects" class="col-12 my-3 collapse">
+                    <section class="row justify-content-around">
+
+
+                        <div class="mt-5 col-10">
+                            <h5 class="text-center">SimpleMenuDB</h5>
+
+                            <section class="text-center">
+                                
+                                <a class="btn btn-secondary" target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://simplemenu-db.web.app/">Ver en funcionamiento</a>
+
+                            </section>
+    
+    
+                            <section class="row mt-3">
+                                <p class="col-12"><strong>Herramientas y lenguajes:</strong></p>
+                                <p class="col-12">Javascript, Firebase SDK, HTML y CSS</p>
+                            </section>
+    
+                            <section class="row mt-3">
+                                <p class="col-12 fw-bold"><strong>Descripcion:</strong></p>
+                                <p class="col-12">
+
+                                    Aplicación web desde la que locales pueden modificar o eliminar los productos de su menú (CRUD).
+                                    <br>
+                                    Tiene el objetivo de realizar las mínimas operaciones posibles (tanto de lectura como escritura), esto con la finalidad de minimizar al máximo el costo por usuario.
+                                    <br><br>
+                                    Utiliza firestore-database(Base de datos noSQL) y el storage de firebase(Para permitir la subida de imágenes).
+                                    <br><br>
+                                    Uno de los ejemplos de resultado final podría ser la página web de <a href="https://cocina-sin-frontera.web.app/" target="_blank" rel="noopener noreferrer">Cocina sin frontera</a>.
+
+                                </p>
+                            </section>
+    
+                        </div>
+
+                        <div class="mt-5 col-10">
+                            <h5 class="text-center">TicTacToe</h5>
+
+                            <section class="text-center">
+                                
+                                <a class="btn btn-secondary" target="_blank"
+                                        rel="noopener noreferrer"
+                                        href="https://github.com/GuidoGdR/TicTacToe">Ver codigo</a>
+                                
+                                        <a class="btn btn-secondary" target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://guidogdr.github.io/TicTacToe/">Ver en funcionamiento</a>
+
+                            </section>
+    
+    
+                            <section class="row mt-3">
+                                <p class="col-12"><strong>Herramientas y lenguajes:</strong></p>
+                                <p class="col-12">Javascript ( React ), HTML y CSS ( water.css )</p>
+                            </section>
+    
+                            <section class="row mt-3">
+                                <p class="col-12"><strong>Descripcion:</strong></p>
+                                <p class="col-12">Ta-Te-Ti hecho con React</p>
+                            </section>
+    
+                        </div>
+
+                        <div class="mt-5 col-10">
+                            <h5 class="text-center">My_Web</h5>
+
+                            <section class="text-center">
+                        
+                                <a class="btn btn-secondary" target="_blank"
+                                        rel="noopener noreferrer"
+                                        href="https://github.com/GuidoGdR/My_Web">Ver codigo</a>
+                                
+                                        <a class="btn btn-secondary" target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://guidodorego.com/">Ver en funcionamiento</a>
+
+                            </section>
+
+                            <section class="row mt-3">
+                                <p class="col-12"><strong>Herramientas y lenguajes:</strong></p>
+                                <p class="col-12">Python(Django, CKEditorn Gunicorn), Docker, Nginx, AWS, HTML y CSS</p>
+                            </section>
+    
+                            <section class="row mt-3">
+                                <p class="col-12"><strong>Descripcion:</strong></p>
+                                <p class="col-12">
+                                    Una pagina web personal con secciones de blog y contacto.
+                                    <br>
+                                    Se desplego con una imagen docker para Gunicorn(Django) y otra para Nginx. 
+                                    Todo sobre un EC2 de AWS
+                                </p>
+                            </section>
+    
+                        </div>
+    
+                        <div class="mt-5 col-10">
+                            <h5 class="text-center">Products_API</h5>
+
+                            
+                            <section class="text-center">
+                        
+                                <a class="btn btn-secondary" target="_blank"
+                                        rel="noopener noreferrer"
+                                        href="https://github.com/GuidoGdR/products_API">Ver codigo</a>
+                                
+                            </section>
+
+                            <section class="row mt-3">
+                                <p class="col-12"><strong>Herramientas y lenguajes:</strong></p>
+                                <p class="col-12"> Python (Django Rest Framework)</p>
+                            </section>
+    
+                            <section class="row mt-3">
+                                <p class="col-12"><strong>Descripcion:</strong></p>
+                                <p class="col-12">API Rest de productos con CRUD y Tokens para la autentificación</p>
+                            </section>
+    
+                        </div>
+
+
+                    </section>
+                </div>
+
+
+                <hr class="my-4 bg-secondary">
+
+                
+                <!--    Experiencia    -->
+                <div class="row my-5 justify-content-center">
+                    <a
+                    class="col-10 bg-danger border-0 border-animated-1-secondary rounded"
+                    data-toggle="collapse"
+                    href="#experience"
+                    role="button">
+                        <h4 class="col-12 py-2 text-center text-white inner-text">Experiencia:</h4>
+                    </a>
+                </div>
+
+                <div id="experience" class="col-12 my-3 collapse">
+                    <section class="row">
+
+
+                        <div class="mt-4">
+                            <h5 class="text-center">Dental SI <span>(09/23)</span></h5>
+                            <p class="text-start">Realicé tareas como:</p>
+                            <ul class="text-start">
+    
+                                <li class="mt-2">
+                                    Crear un scraper para recuperar datos desde un sistema viejo y facilitarle dichos datos a la gente del nuevo sistema.
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="mt-4">
+                            <h5 class="text-center">cocina sin frontera <span>(07/23)</span></h5>
+                            <p class="text-start">Realicé tareas como:</p>
+                            <ul class="text-start">
+    
+                                <li class="mt-2">
+                                    Crear una SPA para el local de comidas en cuestion.
+                                </li>
+                                <li class="mt-2">
+                                    Posteriormente adaptar la pagina para que funcione con mi proyecto "SimpleMenuDB" para utilizar una db y permitir el CRUD en el menu
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="mt-4">
+                            <h5 class="text-center">Conversus <span>(09/22-01/23)</span></h5>
+                            <p class="text-start">Realicé tareas como:</p>
+                            <ul class="text-start">
+    
+                                <li class="mt-2">
+                                    Crear herramienta para facilitar calculos de marketing digital (JS, HTML Y CSS)
+
+                                </li>
+                                <li class="mt-2">Crear bot de telegram para mostrar secciones de productos y los productos
+                                    de cada seccion (Python)</li>
+                                <li class="mt-2">Crear nuevos posts para un blog (WordPress)</li>
+    
+                            </ul>
+                        </div>
+
+
+                    </section>
+                </div>
+
+
+                <hr class="my-4 bg-secondary">
+
+
+                
+                <!--    Formación    -->
+                <div class="row my-5 justify-content-center">
+                    <a
+                    class="col-10 bg-danger border-0 border-animated-1-secondary rounded"
+                    data-toggle="collapse"
+                    href="#education"
+                    role="button">
+                        <h4 class="col-12 py-2 text-center text-white inner-text">Formación:</h4>
+                    </a>
+                </div>
+
+                <div id="education" class="col-12 my-3 collapse">
+                    <div class="row justify-content-around text-center">
+
+
+                        <div class="mt-4 col-12">
+                            <h5>Fundamentos de la gestión de proyectos <span>(2023)</span></h5>
+                            <p>Google Career Certificates en Coursera</p>
+                        </div>
+    
+                        <div class="mt-4 col-12">
+                            <h5>Master en CSS: Responsive, SASS, Flexbox, Grid y Bootstrap <span>(2023)</span></h5>
+                            <p>Udemy</p>
+                        </div>
+    
+                        <div class="mt-4 col-12">
+                            <h5>Secundario, escuela de comercio N.º 21 <span>(2011-2016)</span></h5>
+                            <p>Hipolito Bouchard</p>
+                        </div>
+    
+                        <div class="mt-4 col-12">
+                            <h5>Curso de armado y reparacion de PC <span>(2018-2018)</span></h5>
+                            <p>Instituto Tecnológico Argentino</p>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <hr class="col-12 mt-4 bg-secondary p-0">
+
+
+                <!--    Frameworks    -->
+                <div class="row my-5 justify-content-center">
+                    <a
+                    class="col-10 bg-danger border-0 border-animated-1-secondary rounded"
+                    data-toggle="collapse"
+                    href="#frameworks"
+                    role="button">
+                        <h4 class="col-12 py-2 text-center text-white inner-text">Frameworks:</h4>
+                    </a>
+                </div>
+
+                <div id="frameworks" class="col-12 my-3 collapse">
+                    <div class="row justify-content-around">
+
+
+                        <div class="bg-secondary col-3 m-3 rounded text-center mt-3">
+                            <p class="mt-3">Django</p>
+                            <hr class="bg-dark">
+                            <p>(Python)</p>
+                        </div>
+    
+                        <div class="bg-secondary col-3 m-3 rounded text-center mt-3">
+                            <p class="mt-3">DjangoREST</p>
+                            <hr class="bg-dark">
+                            <p>(Python)</p>
+                        </div>
+    
+                        <div class="bg-secondary col-3 m-3 rounded text-center mt-3">
+                            <p class="mt-3">Tkinter</p>
+                            <hr class="bg-dark">
+                            <p>(Python)</p>
+                        </div>
+    
+                        <div class="bg-secondary col-3 m-3 rounded text-center mt-3">
+                            <p class="mt-3">Pandas</p>
+                            <hr class="bg-dark">
+                            <p>(Python)</p>
+                        </div>
+    
+                        <div class="bg-secondary col-3 m-3 rounded text-center mt-3">
+                            <p class="mt-3">Jquey</p>
+                            <hr class="bg-dark">
+                            <p>(JavaScript)</p>
+                        </div>
+
+                        <div class="bg-secondary col-3 m-3 rounded text-center mt-3">
+                            <p class="mt-3">React</p>
+                            <hr class="bg-dark">
+                            <p>(JavaScript)</p>
+                        </div>
+    
+                        <div class="bg-secondary col-3 m-3 rounded text-center mt-3">
+                            <p class="mt-3">Bootstrap</p>
+                            <hr class="bg-dark">
+                            <p>(CSS)</p>
+                        </div>
+    
+                        <div class="bg-secondary col-3 m-3 rounded text-center mt-3">
+                            <p class="mt-3">SASS</p>
+                            <hr class="bg-dark">
+                            <p>(CSS)</p>
+                        </div>
+    
+                        <div class="bg-secondary col-3 m-3 rounded text-center mt-3">
+                            <p class="mt-3">LESS</p>
+                            <hr class="bg-dark">
+                            <p>(CSS)</p>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!--    Jquery    -->
+    <script type="text/javascript" src="jquery/code.jquery.com_jquery-3.7.0.js"></script>
+
+    <!--     Popper.js (requisito de tooltip)    -->
+    <script type="text/javascript" src="jquery/popper.js"></script>
+
+    <!--    Bootstrap JS    -->
+    <script type="text/javascript" src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    
+
+    <!--    My Jquery    -->
+    <script type="text/javascript" src="utils.js"></script>
+</body>
+
+</html>
